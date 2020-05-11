@@ -1,0 +1,37 @@
+*** everything about ng-repeat ***
+
+<table ng-controller="myCtrl" border="1">
+    <tr ng-repeat="x in records">
+        <td>{{x.Name}}</td>
+        <td>{{x.Country}}</td>
+    </tr>
+</table>
+
+<script>
+var app = angular.module("myApp", []);
+app.controller("myCtrl", function($scope) {
+    $scope.records = [
+       {
+            "Name" : "Alfreds Futterkiste",
+            "Country" : "Germany"
+        },{
+            "Name" : "Berglunds snabbköp",
+            "Country" : "Sweden"
+        },{
+            "Name" : "Centro comercial Moctezuma",
+            "Country" : "Mexico"
+        },{
+            "Name" : "Ernst Handel",
+            "Country" : "Austria"
+        }
+    ]
+});
+</script>
+*****************
+
+*** everything about ng-click ****
+<button ng-click="addPost()">Post</button>
+************
+
+<a> tag is used for hyperlinks.
+<a href="https://www.w3schools.com">Visit W3Schools.com!</a>
